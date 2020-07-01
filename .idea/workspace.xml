@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="860f38b2-b3fb-4354-9937-d7570c16d33c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Item-controller/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/ItemApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/config/DruidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/config/FileUploadConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/config/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/config/LogAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/config/SpringSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/controller/BlogAdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/controller/BlogAuditLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/controller/BlogMemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/controller/BlogPermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/java/cxt/cn/controller/BlogRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-controller/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/java/cxt/cn/mapper/BlogAdminMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/java/cxt/cn/mapper/BlogAuditLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/java/cxt/cn/mapper/BlogMemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/java/cxt/cn/mapper/BlogPermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/java/cxt/cn/mapper/BlogRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/resources/mapper/BlogAdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/resources/mapper/BlogAuditLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/resources/mapper/BlogMemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/resources/mapper/BlogPermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-dao/src/main/resources/mapper/BlogRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/bo/AdminAuthData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/bo/AdminSaveDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/bo/AdminUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/dto/BlogAdminLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/dto/BlogAdminRegisterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/entity/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/entity/BlogAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/entity/BlogAuditLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/entity/BlogMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/entity/BlogPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/entity/BlogRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/vo/BlogPermissionAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/vo/BlogPermissionBanRestart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/vo/BlogPermissionUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/vo/BlogUserPermissionAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-pojo/src/main/java/cxt/cn/vo/RedisUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/IBlogAdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/IBlogAuditLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/IBlogMemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/IBlogPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/IBlogRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/impl/BlogAdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/impl/BlogAuditLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/impl/BlogMemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/impl/BlogPermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/impl/BlogRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-service/src/main/java/cxt/cn/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/CookieUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/FileNameUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/FileUploadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/IErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/IdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/ImageSuffix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/JwtConstans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/NumberUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/ObjectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/RestfulAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/StudioUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Item-utils/src/main/java/cxt/cn/utils/UUIDUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogProjecct/Blog-nacos-server/pom.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$PROJECT_DIR$/../../repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../apache-maven-3.5.2/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1e4pCUsNJP4OcHN7I6ohK9QqZid" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Item-controller" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cxt.cn.ItemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="860f38b2-b3fb-4354-9937-d7570c16d33c" name="Default Changelist" comment="" />
+      <created>1593590591604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593590591604</updated>
+      <workItem from="1593590594003" duration="725000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="个人博客管理后端" />
+    <option name="LAST_COMMIT_MESSAGE" value="个人博客管理后端" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1880" height="300" key="GridCell.Tab.0.bottom" timestamp="1593590863522">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1880" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1593590863522" />
+    <state width="1880" height="300" key="GridCell.Tab.0.center" timestamp="1593590863521">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1880" height="300" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1593590863521" />
+    <state width="1880" height="300" key="GridCell.Tab.0.left" timestamp="1593590863521">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1880" height="300" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1593590863521" />
+    <state width="1880" height="300" key="GridCell.Tab.0.right" timestamp="1593590863521">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1880" height="300" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1593590863521" />
+    <state x="448" y="121" key="SettingsEditor" timestamp="1593590843632">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="448" y="121" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1593590843632" />
+    <state x="711" y="431" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1593591200343">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="711" y="431" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593591200343" />
+  </component>
+</project>
