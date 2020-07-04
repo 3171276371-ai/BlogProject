@@ -48,6 +48,8 @@ public class BlogPermissionController {
         return CommonResult.success( "查询成功",permissionService.getPermissionList(account));
     }
 
+
+
     /**
      * 更新或添加用户权限
      * @param permissionAdd

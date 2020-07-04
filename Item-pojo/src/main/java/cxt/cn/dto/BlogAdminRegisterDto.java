@@ -1,20 +1,16 @@
 package cxt.cn.dto;
 
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 
 /**
- * <h3>Software_development_studio</h3>
- * <p>注册dto</p>
- *
- * @author : zhengyue
- * @date : 2020-05-18 13:40
- **/
+ * @Auther: ChengXiaotian
+ * @Date: 2020/7/2 09:24
+ * @Description:
+ */
 @Data
-@ApiModel("SysAdminRegisterDto :: 管理员注册")
 public class BlogAdminRegisterDto {
     /**
      * 帐号
@@ -36,9 +32,5 @@ public class BlogAdminRegisterDto {
     @NotBlank(message = "姓名不能为空")
     private  String name;
 
-    /**
-     * 性别
-     */
-    @ApiModelProperty("性别")
-    private Integer sex;
+
 }

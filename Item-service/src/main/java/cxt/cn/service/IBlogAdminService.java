@@ -5,6 +5,8 @@ import cxt.cn.entity.BlogAdmin;
 import com.baomidou.mybatisplus.extension.service.IService;
 import cxt.cn.vo.RedisUserInfo;
 
+import java.util.List;
+
 /**
  * <p>
  * 管理员 服务类
@@ -18,4 +20,6 @@ public interface IBlogAdminService extends IService<BlogAdmin> {
     RedisUserInfo login(String account, String password);
 
     Boolean register(BlogAdminRegisterDto registerDto);
+
+
 }

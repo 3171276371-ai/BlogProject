@@ -4,6 +4,7 @@ package cxt.cn.service.impl;
 import cn.hutool.core.util.ObjectUtil;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import cxt.cn.bo.AdminSaveDetails;
 import cxt.cn.dto.BlogAdminRegisterDto;
@@ -107,7 +108,7 @@ public class BlogAdminServiceImpl extends ServiceImpl<BlogAdminMapper, BlogAdmin
 
     @Override
     public Boolean register(BlogAdminRegisterDto registerDto) {
-        if(StringUtils.isEmpty(registerDto.getPassword())) {
+        if(StringUtils.isEmpty(registerDto.getPassword())){
             registerDto.setPassword("000000");
         }
         BlogAdmin aminInfo = blogAdminMapper.selectOne(new QueryWrapper<BlogAdmin>().lambda()
@@ -127,4 +128,7 @@ public class BlogAdminServiceImpl extends ServiceImpl<BlogAdminMapper, BlogAdmin
         }
         return false;
     }
+
+
+
 }
