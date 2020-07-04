@@ -31,6 +31,21 @@ public class RedisUserInfo {
      */
     private String staffName;
 
+    /**
+     * 用户电话号码
+     */
+    private String phone;
+
+
+    /**
+     * 用户简介
+     */
+    private String introduce;
+
+    /**
+     * 用户性别
+     */
+    private Integer sex;
 
     /**
      * token

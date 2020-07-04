@@ -93,6 +93,9 @@ public class BlogAdminServiceImpl extends ServiceImpl<BlogAdminMapper, BlogAdmin
             //查询用户信息
             BlogAdmin user = blogAdminMapper.selectOne(new QueryWrapper<BlogAdmin>().lambda().eq(BlogAdmin::getAccount, account));
 
+            redisUserInfo.setIntroduce(user.getIntroduce());
+            redisUserInfo.setSex(user.getSex());
+            redisUserInfo.setPhone(user.getPhone());
             redisUserInfo.setId(user.getId());
             redisUserInfo.setStaffName(user.getName());
             redisUserInfo.setPermissionList(cmsPermissionList);

@@ -62,4 +62,11 @@ public class BlogAdmin extends BaseEntity {
     private String authData;
 
 
+    private String introduce;
+
+
+
+
+
+
 }
