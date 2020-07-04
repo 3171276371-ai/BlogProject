@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,8 +10,8 @@
         <module name="Item-service" />
         <module name="Item-dao" />
         <module name="Item-utils" />
-        <module name="Item-pojo" />
         <module name="Item-controller" />
+        <module name="Item-pojo" />
       </profile>
     </annotationProcessing>
   </component>

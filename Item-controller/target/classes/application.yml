@@ -1,0 +1,117 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: Blog-item-server
+  datasource:
+    url: jdbc:mysql://121.199.73.204:3306/blog?useSSL=false&serverTimezone=GMT%2B8&characterEncoding=utf8&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    # 数据库连接驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  servlet:
+    multipart:
+      max-request-size: 30MB
+      max-file-size: 30MB
+
+  # Redis配置
+  redis:
+    host: 121.199.73.204
+    port: 6379
+  security:
+    user:
+      name: admin
+      password: 123456
+  # MP配置日志
+logging:
+  level:
+    root: info
+    com.studio.dao: debug
+    com.studio.service: debug
+    com.studio.config: debug
+  pattern:
+    console: '%p%m%n'
+
+  # 配置 mappers 文件
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: id_worker
+  mapper-locations: classpath:/mapper/*.xml
+
+
+
+
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  secret: mall-admin-secret #JWT加解密使用的密钥
+  expiration: 86400 #JWT的超期限时间(60*60*24)
+  tokenHead: Studio  #JWT负载中拿到开头
+
+  #web:
+  #  all-images: file:/D:/images/
+  #  all-images-mapping: /images/**
+  #  ise-images: D:/images/inspection
+  #  ise-images-mapping: images/inspection
+  #  images-suffix: >
+  #    .JPG,
+  #    .JPEG,
+  #    .PNG,
+  #    .GIF,
+  #    .BMP
+  #web:
+  #  all-images: file:/usr/local/images/
+  #  all-images-mapping: /images/**
+  #  ise-images: /usr/local/images/inspection
+  #  ise-images-mapping: images/inspection
+  #  images-suffix: >
+  #    .JPG,
+  #    .JPEG,
+  #    .PNG,
+  #    .GIF,
+  #    .BMP
+
+  #management:
+  #  endpoints:
+  #    web:
+  #      exposure:
+  #        include: '*'
+  #  endpoint:
+  #    health:
+  #      show-details: ALWAYS
+web:
+    all-images: file:/usr/local/images/
+    all-images-mapping: /images/**
+    images: /usr/local/images/software_studio
+    images-mapping: images/software_studio
+    images-suffix: >
+      .JPG,
+      .JPEG,
+      .PNG,
+      .GIF,
+      .BMP
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
