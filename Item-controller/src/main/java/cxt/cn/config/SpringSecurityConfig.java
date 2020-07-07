@@ -77,7 +77,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
         )
                 .permitAll()
                 .antMatchers(
-                        "/blogAdmin/login", "/blogAdmin/register"
+                        "/blogAdmin/login", "/blogAdmin/register","/blogArticleClass/**","/blogArticle/**"
                 )
                 .permitAll()
                 .antMatchers(HttpMethod.OPTIONS)

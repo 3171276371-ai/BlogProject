@@ -45,7 +45,7 @@ public class CodeGenerator {
 //        String [] tableNames = new String[]{"cms_user"};
         String[] tableNames = scanner("表名，多个英文逗号分割").split(",");
 
-        String [] modules = new String[]{"Blog-item-server/Item-controller", "Blog-item-server/Item-service", "Blog-item-server/Item-dao", "Blog-item-server/Item-pojo"};//项目模块名，需自定义
+        String [] modules = new String[]{"Item-controller", "Item-service", "Item-dao", "Item-pojo"};//项目模块名，需自定义
         for (String module : modules) {
             moduleGenerator(module,tableNames);
         }
@@ -98,7 +98,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return new File("Blog-item-server/Item-dao").getAbsolutePath()+ "/src/main/resources/mapper/" + tableInfo.getEntityName()
+                return new File("Item-dao").getAbsolutePath()+ "/src/main/resources/mapper/" + tableInfo.getEntityName()
                         + "Mapper" + StringPool.DOT_XML;
             }
         });
@@ -109,28 +109,28 @@ public class CodeGenerator {
     private static TemplateConfig getTemplateConfig(String module) {
         TemplateConfig templateConfig = new TemplateConfig();
         //studio_pojo", "studio_dao", "studio_service", "studio_controller
-        if ("Blog-item-server/Item-pojo".equals(module)){
+        if ("Item-pojo".equals(module)){
             templateConfig.setEntity(new TemplateConfig().getEntity(false))
                     .setMapper(null)//mapper模板
                     .setXml(null)
                     .setService(null)
                     .setServiceImpl(null)
                     .setController(null);//service模块不生成controller代码
-        } else if ("Blog-item-server/Item-dao".equals(module)){//web模块只生成controller代码
+        } else if ("Item-dao".equals(module)){//web模块只生成controller代码
             templateConfig.setEntity(null)
                     .setMapper(new TemplateConfig().getMapper())
                     .setXml(null)
                     .setService(null)
                     .setServiceImpl(null)
                     .setController(null);
-        } else if ("Blog-item-server/Item-service".equals(module)){//web模块只生成controller代码
+        } else if ("Item-service".equals(module)){//web模块只生成controller代码
             templateConfig.setEntity(null)
                     .setMapper(null)
                     .setXml(null)
                     .setService(new TemplateConfig().getService())
                     .setServiceImpl(new TemplateConfig().getServiceImpl())
                     .setController(null);
-        } else if ("Blog-item-server/Item-controller".equals(module)){//web模块只生成controller代码
+        } else if ("Item-controller".equals(module)){//web模块只生成controller代码
             templateConfig.setEntity(null)
                     .setMapper(null)
                     .setXml(null)

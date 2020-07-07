@@ -84,7 +84,7 @@ public class BlogRoleController {
 
 
     @ApiOperation("更新用户角色用户端user:role:update")
-    @PutMapping("/add/role")
+    @PostMapping("/add/role")
     public CommonResult addRole(@Validated @RequestBody BlogUserRoleAdd roleAdd) {
         // 去重
         roleAdd.setRoleList(roleAdd.getRoleList().stream().distinct().collect(Collectors.toList()));

@@ -88,25 +88,7 @@ public class BlogAdminController {
         return CommonResult.success("登出成功");
     }
 
-
-    /**
-     * 查询所有用户
-     */
-    @GetMapping("/findAll")
-    @ApiOperation("所有用户查询")
-    @PreAuthorize("hasAuthority('admin:list')")
-    public CommonResult findAll(
-            @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize,
-            @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
-            @RequestParam(value = "name", defaultValue = "") String name
-    ) {
-        IPage<BlogAdmin> page = new Page<>(pageNum, pageSize);
-        QueryWrapper<BlogAdmin> queryWrapper = new QueryWrapper<>();
-        queryWrapper.lambda()
-                .like(BlogAdmin::getName, name).orderByDesc(BlogAdmin::getCreateTime);
-        System.out.println(adminService.page(page, queryWrapper).getRecords().toString());
-        return CommonResult.success(adminService.page(page, queryWrapper));
-    }
+ 
 
 
 
