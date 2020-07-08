@@ -1,0 +1,6 @@
+cxt/cn/mapper/BlogRoleMapper.class
+cxt/cn/mapper/BlogAuditLogMapper.class
+cxt/cn/mapper/BlogArticleMapper.class
+cxt/cn/mapper/BlogArticleClassMapper.class
+cxt/cn/mapper/BlogAdminMapper.class
+cxt/cn/mapper/BlogPermissionMapper.class

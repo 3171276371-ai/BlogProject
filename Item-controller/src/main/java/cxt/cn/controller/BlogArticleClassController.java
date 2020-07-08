@@ -14,6 +14,7 @@ import cxt.cn.vo.BlogArticleClassOut;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -45,6 +46,7 @@ public class BlogArticleClassController {
     }
     @ApiOperation("添加文章分类")
     @PostMapping("/AddClassAllData")
+    @PreAuthorize("hasAnyAuthority('article:add')")
     public CommonResult AddClassAllData (@RequestBody BlogArticleClassOut blogArticleClassOut) {
         boolean save = blogArticleClassService.AddClassAllData(blogArticleClassOut);
         if (save){

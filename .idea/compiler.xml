@@ -15,4 +15,13 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Item-controller" options="-parameters" />
+      <module name="Item-dao" options="-parameters" />
+      <module name="Item-pojo" options="-parameters" />
+      <module name="Item-service" options="-parameters" />
+      <module name="Item-utils" options="-parameters" />
+    </option>
+  </component>
 </project>

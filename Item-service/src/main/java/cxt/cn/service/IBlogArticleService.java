@@ -19,4 +19,5 @@ public interface IBlogArticleService extends IService<BlogArticle> {
     List<BlogArticle> ActiveClassAllData(Long id, Long classId, String name);
 
 
+
 }

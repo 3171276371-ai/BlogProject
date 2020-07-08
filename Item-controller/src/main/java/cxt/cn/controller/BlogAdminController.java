@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import cxt.cn.bo.AdminSaveDetails;
 import cxt.cn.dto.BlogAdminLoginDto;
 import cxt.cn.dto.BlogAdminRegisterDto;
+import cxt.cn.dto.BlogAdminUpdateDto;
 import cxt.cn.entity.BlogAdmin;
 import cxt.cn.entity.BlogPermission;
 import cxt.cn.service.IBlogAdminService;
@@ -16,6 +17,7 @@ import cxt.cn.utils.CommonResult;
 import cxt.cn.vo.RedisUserInfo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
@@ -88,7 +90,21 @@ public class BlogAdminController {
         return CommonResult.success("登出成功");
     }
 
- 
+     @PostMapping("/update")
+    @ApiOperation("修改用户信息")
+    public CommonResult update(@RequestBody @Validated BlogAdminUpdateDto blogAdminUpdateDto){
+         Long id = saveDetails.getSysAdmin().getId();
+         BlogAdmin blogAdmin = new BlogAdmin();
+         BeanUtils.copyProperties(blogAdminUpdateDto,blogAdmin);
+         boolean update = adminService.update(blogAdmin, new QueryWrapper<BlogAdmin>().lambda().eq(BlogAdmin::getId, id));
+         BlogAdmin byId = adminService.getById(id);
+         if (!update){
+             return CommonResult.failed("修改失败");
+         }
+         return CommonResult.success("修改成功",byId);
+     }
+
+
 
 
 
